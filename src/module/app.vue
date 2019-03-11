@@ -2,7 +2,7 @@
     <div id="app">
         <img src="../images/logo.png"  alt="logo"/>
         <span>{{msg}}</span>
-        <p class="test" test text></p>
+        <p class="test" >test text</p>
     </div>
 </template>
 <script lang="ts">
@@ -11,7 +11,7 @@ export default Vue.extend({
     name:'app2',
     data(){
         return {
-            msg:"hello vue~~##"
+            msg:"hello vue~~"
         }
     }
 })
@@ -19,6 +19,7 @@ export default Vue.extend({
 <style>
     .test{
         color: darkgreen;
+        line-height: 15px;
     }
 </style>
 
