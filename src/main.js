@@ -8,7 +8,10 @@ Vue.use(ElementUI);
 
 
 new Vue({
-    el:'#app',
-    components:{'navmenu':navmenu,'banner':banner},
+     el: '#app',
+     components: {
+          'navmenu': navmenu,
+          'banner': banner
+     },
      //render: h => h(navmenu)
 });
