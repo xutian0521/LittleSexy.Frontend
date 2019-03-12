@@ -7,14 +7,14 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({
+export default {
     name:'app2',
     data(){
         return {
             msg:"hello vue~~"
         }
     }
-})
+}
 </script>
 <style>
     .test{

@@ -24,7 +24,7 @@
 import Vue from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
-export default Vue.extend({
+export default {
   name: "navMenu",
   data() {
     return {
@@ -36,7 +36,7 @@ export default Vue.extend({
       console.log(key, keyPath);
     }
   }
-});
+};
 </script>
 
 

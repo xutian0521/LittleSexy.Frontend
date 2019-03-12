@@ -18,7 +18,7 @@ import Vue from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import axios from "axios";
-export default Vue.extend({
+export default {
   name: 'banner',
   data() {
     return {
@@ -42,13 +42,13 @@ export default Vue.extend({
 
           var apiDataArr = response.data.content;
 
-          _self.bannerList = apiDataArr;
+          _self.$data.bannerList = apiDataArr;
         })
         .catch(function(error) {
           console.log(error);
         });
     }
   }
-});
+};
 </script>
 
