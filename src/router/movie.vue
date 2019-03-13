@@ -28,6 +28,7 @@ import Vue from "vue";
 import ElementUI from "element-ui";
 import "element-ui/lib/theme-chalk/index.css";
 import axios from "axios";
+import common from "../common.js";
 
 export default {
   name: "el-movie",
@@ -46,7 +47,7 @@ export default {
       let _self = this;
 
       axios
-        .get("http://localhost:5008/api/Movie/List")
+        .get(`${common.apiurl}/api/Movie/List`)
         .then(function(response) {
           var apiData = response.data.content;
           _self.$data.movieList = apiData;

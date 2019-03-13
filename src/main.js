@@ -2,6 +2,7 @@ import Vue from 'vue';
 import ElementUI from 'element-ui';
 import VueRouter from 'vue-router';
 import 'element-ui/lib/theme-chalk/index.css';
+import './styles/global.css';
 import navmenu from './components/navMenu.vue';
 
 import banner from './components/banner.vue';
@@ -16,7 +17,7 @@ Vue.use(VueRouter);
 const routes = [
      { path: '/', component: home },
      { path: '/home', component: home },
-     { path: '/movie', component: movie },
+     { path: '/movies', component: movie },
      { path: '/test', component: test }
    ]
 // 3. 创建 router 实例，然后传 `routes` 配置

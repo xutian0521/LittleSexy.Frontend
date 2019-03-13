@@ -9,11 +9,15 @@
       text-color="#fff"
       active-text-color="#ffd04b"
     >
-      <el-menu-item index="1">Home</el-menu-item>
-      <el-menu-item index="2">Discover</el-menu-item>
+      <el-menu-item index="1">
+            <router-link to="/home">Home</router-link>
+      </el-menu-item>
+      <el-menu-item index="2">
+        <router-link to="/test">Discover</router-link>
+      </el-menu-item>
       <el-menu-item index="3">Monochrome</el-menu-item>
       <el-menu-item index="4">
-        <a href="movies.html">Movies</a>
+          <router-link to="/movies">Movies</router-link>
       </el-menu-item>
       <el-menu-item index="5">Sexy</el-menu-item>
       <el-menu-item index="6">Profile</el-menu-item>
