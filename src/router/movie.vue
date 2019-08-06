@@ -2,7 +2,7 @@
   <div id="el-movle">
     <el-card shadow="hover">
       <el-row>
-        <el-col :span="6" v-for="item in movieList" style="padding:10px">
+      <el-col :span="8" v-for="(item, index) in movieList" :key="index" :offset="index > 0 ? 2 : 0">
           <el-card :body-style="{ padding: '10px' }" shadow="always">
             <img :src="item.cover" class="image">
             <div style="padding: 14px;">
