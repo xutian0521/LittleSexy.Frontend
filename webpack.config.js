@@ -9,6 +9,7 @@ module.exports ={
         index:'./src/main.js'
     },
     devtool: 'inline-source-map',
+    mode: 'development',
     output:{
         path:path.resolve(__dirname, './dist'),
         filename:'js/[name].js',
