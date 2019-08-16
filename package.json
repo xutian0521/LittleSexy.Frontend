@@ -1,5 +1,5 @@
 {
-  "name": "LittleSexy.UI",
+  "name": "littlesexy.frontend",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "dependencies": {},
   "devDependencies": {
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
