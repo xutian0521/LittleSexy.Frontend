@@ -3,7 +3,6 @@
 1. vue
 2. vue-router
 3. vue-loader
-4. webpack
-5. 
-6. axios
-7. element-ui
+4. webpack 
+5. axios
+6. element-ui
