@@ -17,7 +17,7 @@
       </el-menu-item>
       <el-menu-item index="3">Monochrome</el-menu-item>
       <el-menu-item index="4">
-          <router-link to="/movies">Movies</router-link>
+          <router-link to="/movie">Movies</router-link>
       </el-menu-item>
       <el-menu-item index="5">Sexy</el-menu-item>
       <el-menu-item index="6">Profile</el-menu-item>

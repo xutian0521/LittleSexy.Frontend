@@ -10,6 +10,7 @@
               <div class="bottom clearfix">
                 <time class="time">{{item.date}}</time>
                 <a :href="item.linkUrl">
+                  <router-link :to="{path:'movie/detail', query:{ id: item.id}}">Go</router-link>
                   <el-button type="text" class="button">操作按钮</el-button>
                 </a>
               </div>

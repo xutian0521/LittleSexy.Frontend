@@ -36,7 +36,7 @@ export default {
       let _self = this;
 
       axios
-        .get(`${common.apiurl}/api/Page/Images?pageId=1`)
+        .get(`${common.apiurl}/api/Home/Banner?pageId=1`)
         .then(function(response) {
           //debugger;
 
@@ -44,7 +44,7 @@ export default {
 
           var apiDataArr = response.data.content;
 
-          _self.$data.bannerList = apiDataArr;
+          _self.$data.bannerList = apiDataArr; 
         })
         .catch(function(error) {
           console.log(error);

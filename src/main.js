@@ -8,8 +8,8 @@ import navmenu from './components/navMenu.vue';
 import banner from './components/banner.vue';
 import home from './router/home.vue';
 import movie from './router/movie.vue';
-import movieDetail from './router/movieDetail.vue';
 import test from './router/test.vue';
+import detail from './components/detail.vue'
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);
@@ -18,9 +18,9 @@ Vue.use(VueRouter);
 const routes = [
      { path: '/', component: home },
      { path: '/home', component: home },
-     { path: '/movies', component: movie },
+     { path: '/movie', component: movie },
      { path: '/test', component: test },
-     { path: '/movie/detail', component: movieDetail },
+     { path: '/movie/detail', component: detail },
    ]
 // 3. 创建 router 实例，然后传 `routes` 配置
 // 你还可以传别的配置参数, 不过先这么简单着吧。
@@ -34,7 +34,8 @@ const router = new VueRouter({
           'navmenu': navmenu,
           'home': home,
           'movie': movie,
-          'banner': banner
+          'banner': banner,
+          "detail": detail
      },
      //render: h => h(navmenu)
 });
