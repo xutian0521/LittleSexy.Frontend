@@ -1,4 +1,4 @@
-const apiurl ="http://localhost:5008";
+const apiurl ="";
 export default {
     apiurl:apiurl,
 }

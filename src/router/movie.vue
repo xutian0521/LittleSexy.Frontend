@@ -1,17 +1,17 @@
 <template>
   <div id="el-movle">
-    <el-card shadow="hover">
+    <el-card  shadow="hover">
       <el-row>
-      <el-col :span="8" v-for="(item, index) in movieList" :key="index" :offset="index > 0 ? 2 : 0">
+      <el-col style="padding-bottom: 3%;margin-left: 0%; margin-right: 3%; width:30%" :span="8" v-for="(item, index) in movieList" :key="index" :offset="index > 0 ? 2 : 0">
           <el-card :body-style="{ padding: '10px' }" shadow="always">
             <img :src="item.cover" class="image">
             <div style="padding: 14px;">
-              <span>好吃的汉堡</span>
+              <span>{{item.fanHao}}</span>
               <div class="bottom clearfix">
                 <time class="time">{{item.date}}</time>
                 <a :href="item.linkUrl">
-                  <router-link :to="{path:'movie/detail', query:{ id: item.id}}">Go</router-link>
-                  <el-button type="text" class="button">操作按钮</el-button>
+                  <router-link :to="{path:'movie/detail', query:{ id: item.id}}">观看</router-link>
+                  
                 </a>
               </div>
             </div>
