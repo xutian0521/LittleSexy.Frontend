@@ -1,7 +1,7 @@
 <template>
     <div >
         <el-card shadow="always">
-            <video width="100%" height="100%"  controls="controls"  autoplay="autoplay" :src="movieSrc" ></video>
+            <video id="videoPlay"  width="98%"   controls="controls"  autoplay="autoplay" :src="movieSrc" ></video>
         </el-card>
     </div>
 </template>
@@ -21,7 +21,7 @@ export default {
     };
   },
   mounted() {
-    this.init();
+    this.init();;
   },
   methods: {
     init: function() {
